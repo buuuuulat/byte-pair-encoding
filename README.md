@@ -30,6 +30,7 @@ with vocab size of 32000.
 
 
 ## How to run
+### Train
 1. `uv sync`
 
 2.  Download TinyStories and OpenWebText:
@@ -50,3 +51,18 @@ with vocab size of 32000.
 3. Set training parameters in the `if __name__ == "__main__:` section of [train_bpe.py](byte_pair_encoding/train_bpe.py)
 4. Run it: `uv run ./byte_pair_encoding/train_bpe.py`
 5. Results will be saved to `./outputs/` folder.
+
+### Tokenizer
+Tokenizer class usage example can be found in [example_run.py](byte_pair_encoding/example_run.py):
+
+```bash
+uv run byte_pair_encoding/example_run.py
+```
+
+Output:
+```text
+Text: Multilayer perceptron!
+Encoded: [77, 2468, 314, 280, 282, 1341, 7618, 4015, 33]
+Tokens: ['M', 'ult', 'il', 'ay', 'er', ' per', 'cept', 'ron', '!']
+Decoded: Multilayer perceptron!
+```
