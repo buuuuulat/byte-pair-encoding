@@ -1,14 +1,15 @@
 # Byte Pair Encoding
 
-Hi 👋🏻 this is realization of BPE algorithm from scratch.
+Hi 👋🏻 this is an implementation of the BPE algorithm from scratch. This repo
+includes code I originally wrote as part of an assignment for Stanford's CS336 course.
 
 ---
 
-## OpenWebText run result
+## OpenWebText train run result
 It took ~6 hours to train BPE on MacBook Pro (M3 Pro, 18 GB of unified memory)
 with vocab size of 32000.
 
-### Merges example after training:
+### Sample from merges:
 ```text
 ( lat<=|=>itude)
 ( fet<=|=>ish)
